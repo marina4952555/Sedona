@@ -1,0 +1,210 @@
+.inner-list {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.inner-list__item {
+  position: relative;
+  width: 210px;
+  margin-left: 50px;
+  list-style: none;
+
+  &--house::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -48px;
+    width: 37px;
+    height: 36px;
+    background-image: url("../../img/icon-house.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -44px;
+    width: 37px;
+    height: 36px;
+    background-image: url("../../img/icon-gift.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &--food::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -50px;
+    width: 37px;
+    height: 36px;
+    background-image: url("../../img/icon-burger.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.inner-list__title {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.inner-list__paragraph {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .inner-list {
+    display: flex;
+    //justify-content: space-between;
+    padding-left: 51px;
+    padding-right: 51px;
+  }
+
+  .inner-list__item {
+    margin-top: 100px;
+    margin-left: 0;
+
+    &--house {
+      width: 156px;
+      margin-right: 99px;
+    }
+
+    &--house::before {
+      content: "";
+      position: absolute;
+      top: -90px;
+      left: 40px;
+      width: 75px;
+      height: 72px;
+      background-image: url("../../img/icon-house.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &--gift {
+      order: 1;
+      width: 163px;
+    }
+
+    &--gift::before {
+      content: "";
+      position: absolute;
+      top: -92px;
+      left: 53px;
+      width: 75px;
+      height: 72px;
+      background-image: url("../../img/icon-gift.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &--food {
+      width: 156px;
+      margin-right: 94px;
+    }
+
+    &--food::before {
+      content: "";
+      position: absolute;
+      top: -87px;
+      left: 39px;
+      width: 75px;
+      height: 72px;
+      background-image: url("../../img/icon-burger.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .inner-list__title {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .inner-list__paragraph {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-list {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .inner-list__item {
+    width: 252px;
+
+    &--house {
+      width: 252px;
+      margin-right: 130px;
+    }
+
+    &--house::before {
+      content: "";
+      position: absolute;
+      top: -90px;
+      left: 90px;
+      width: 75px;
+      height: 72px;
+      background-image: url("../../img/icon-house.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &--gift {
+      width: 214px;
+    }
+
+    &--gift::before {
+      content: "";
+      position: absolute;
+      top: -90px;
+      left: 78px;
+      width: 75px;
+      height: 72px;
+      background-image: url("../../img/icon-gift.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &--food {
+      width: 283px;
+      margin-right: 151px;
+    }
+
+    &--food::before {
+      content: "";
+      position: absolute;
+      top: -86px;
+      left: 106px;
+      width: 75px;
+      height: 72px;
+      background-image: url("../../img/icon-burger.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .inner-list__paragraph {
+    margin-bottom: 83px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

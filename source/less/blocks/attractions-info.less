@@ -1,0 +1,158 @@
+.attractions-info {
+  width: 280px;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.attractions-info__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.attractions-info__list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.attractions-info__label {
+  margin-bottom: 54px;
+  position: relative;
+  display: block;
+  padding-left: 79px;
+  line-height: 26px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: -12px;
+    width: 46px;
+    height: 46px;
+    background-color: #f2f2f2;
+  }
+}
+
+.attractions-info__input {
+  display: none;
+}
+
+.attractions-info__input:checked + .attractions-info__label::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 4px;
+  width: 24px;
+  height: 16px;
+  background-image: url("../../img/icon-tick.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.attractions-info__input:hover + .attractions-info__label::before {
+  background-color: #e5e5e5;
+}
+
+.attractions-info__input:checked:active + .attractions-info__label::after {
+  opacity: 0.3;
+}
+
+.attractions-info__input:active + .attractions-info__label::before,
+.attractions-info__input:focus + .attractions-info__label::before {
+  background-color: #d5d5d5;
+}
+
+@media (min-width: @tablet-width) {
+  .attractions-info {
+    width: 650px;
+    border: none;
+  }
+
+  .attractions-info__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 70px;
+    justify-content: space-between;
+  }
+
+  .attractions-info__item {
+    width: 240px;
+    margin-bottom: 20px;
+  }
+
+  .attractions-info__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    font-size: 21px;
+
+    &::before,
+    &::after {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 120px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    &::before {
+      margin-right: 60px;
+    }
+
+    &::after {
+      margin-left: 60px;
+    }
+  }
+
+  .attractions-info__label {
+    margin-bottom: 39px;
+
+    &::before {
+      left: -2px;
+      top: -15px;
+      border: 5px solid #f2f2f2;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attractions-info {
+    width: 1060px;
+  }
+
+  .attractions-info__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .attractions-info__title {
+    &::before,
+    &::after {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      width: 215px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    &::before {
+      margin-right: 60px;
+    }
+
+    &::after {
+      margin-left: 60px;
+    }
+  }
+}
