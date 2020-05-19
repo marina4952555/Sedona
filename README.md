@@ -1,1 +1,1 @@
-Учебный макет htmlacademy (html, scss, js, сборка gulp)
+Учебный макет htmlacademy (html, less, js, сборка gulp)
