@@ -1,1 +1,7 @@
-Учебный макет htmlacademy (html, less, js, сборка gulp)
+Адаптивная кроссбраузерная вёрстка.<br>
+Используемые инструменты: html, less, gulp.<br>
+Макет HTML Academy<br>
+<br>
+Для запуска:<br>
+Установить зависимости npm i<br>
+Запустить сборку npm run start<br>
